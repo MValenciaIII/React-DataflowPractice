@@ -3,7 +3,7 @@ import Header from "./component/Header";
 import Body from "./component/Body";
 
 function App() {
-    const [counter, setCounter] = React.useState(0)
+    const [counter, setCounter] = React.useState(1)
 
     return (
 
@@ -16,7 +16,7 @@ function App() {
                     <Header />
                 </div>
                 <div className="col-sm-6">
-                    <Body />
+                    <Body number={counter}/>
                 </div>
             </div>
         </div>
