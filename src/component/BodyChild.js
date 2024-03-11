@@ -3,7 +3,7 @@ import BodyGrandChildTwo from "./BodyGrandChildTwo"
 
 
 function BodyChild(props) {
-
+console.log(props)
 
     return (
         <div className="container">
@@ -12,10 +12,10 @@ function BodyChild(props) {
             </div>
             <div className="row">
                 <div className="col-sm-6">
-                    <BodyGrandChild pizza={props.number}/>
+                    <BodyGrandChild addFunc={props.addFunc} />
                 </div>
                 <div className="col-sm-6">
-                    <BodyGrandChildTwo />
+                    <BodyGrandChildTwo showFunc={props.showFunc} displayElements={props.displayElements}/>
                 </div>
             </div>
         </div>

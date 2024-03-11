@@ -1,7 +1,7 @@
 import HeaderChild from "./HeaderChild"
 import HeaderChild2 from "./HeaderChildTwo"
 
-function Header() {
+function Header(props) {
 
 
     return (
@@ -11,10 +11,10 @@ function Header() {
             </div>
             <div className="row">
                 <div className="col-sm-6">
-                    <HeaderChild />
+                    <HeaderChild showBoolean={props.showBoolean} />
                 </div>
                 <div className="col-sm-6">
-                    <HeaderChild2 />
+                    <HeaderChild2 addElementFunc={props.addElementFunc}/>
                 </div>
             </div>
         </div>

@@ -1,13 +1,14 @@
 
 
-function BodyGrandChild({pizza}) {
+function BodyGrandChild(props) {
 
 
     return (
         <div className="container">
             <div className="row">
                 <h1>I'm the Body Grand Child</h1>
-                <h3>{pizza}</h3>
+                <button onClick={props.addFunc}>Add</button>
+
             </div>
         </div>
     )
