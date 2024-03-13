@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./component/Header";
 import Body from "./component/Body";
+import UseEffect from "./component/UseEffect";
 
 function App() {
     const [isShown, setIsShown] = React.useState(false)
@@ -33,11 +34,14 @@ function App() {
                 <h1>Hello Dataflow</h1>
             </div>
             <div className="row">
-                <div className="col-sm-6">
+                <div className="col-sm-4">
                     <Header showBoolean={isShown} addElementFunc={addAnotherElement}/>
                 </div>
-                <div className="col-sm-6">
+                <div className="col-sm-4">
                     <Body showFunc={showName} displayElements={listElements}/>
+                </div>
+                <div className="col-sm-4">
+                    <UseEffect  showBoolean={isShown}/>
                 </div>
             </div>
         </div>
